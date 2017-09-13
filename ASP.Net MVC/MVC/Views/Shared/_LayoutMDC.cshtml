@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Greeting App</title>
+    <link rel="stylesheet"
+          href="~/node_modules/material-components-web/dist/material-components-web.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        :root {
+            --mdc-theme-primary: #2196f3;
+        }
+
+        .mdc-ripple-surface.mdc-ripple-upgraded.mdc-button--primary::before,
+        .mdc-ripple-surface.mdc-ripple-upgraded.mdc-button--primary::after {
+            background-color: rgba(255, 255, 255, .2);
+        }
+
+        #greeting-form > button {
+            margin-top: 8px;
+        }
+
+        /* Place drawer and main next to each other. */
+        .demo-content {
+            display: flex;
+            flex: 1 1 auto;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .demo-main {
+            padding-left: 16px;
+        }
+
+        .menu-user {
+            position: absolute;
+            right: 8px;
+            top: 56px;
+        }
+
+        .gbii::before {
+            content: url(https://lh3.googleusercontent.com/-mdCFg-L7QyA/AAAAAAAAAAI/AAAAAAAAAAA/APJypA32MX34lPHr3KrAbl6lGj005QFkOQ/s32-c-mo/photo.jpg);
+        }
+
+        @@media(min-width: 768px) {
+            .mobile-show {
+                display: none;
+            }
+        }
+
+        @@media(max-width: 768px) {
+            .mobile-hide {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="mdc-typography demo-body">
+    <div>
+        <header class="mdc-toolbar mdc-toolbar--fixed">
+            <div class="mdc-toolbar__row">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                    <button class="demo-menu material-icons mdc-toolbar__icon--menu mobile-show">menu</button>
+                    <button class="demo-menu material-icons mdc-toolbar__icon--menu mobile-hide">card_giftcard</button>
+                    <div class="mdc-toolbar__title">
+                        <span>Nome do Sistema</span>
+                    </div>
+                </section>
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+                    <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
+                    <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
+                    <span class="gb_7a gbii">
+                        
+                    </span>
+                    <div class="mdc-menu-anchor">
+                        <a href="#" class="material-icons mdc-toolbar__icon toggle" aria-label="Bookmark this page" alt="Bookmark this page">more_vert</a>
+                        <div class="mdc-simple-menu menu-user mdc-simple-menu--open" tabindex="-1" id="demo-menu">
+                            <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true" style="transform: scale(1, 1);">
+                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.069s;">Back</li>
+                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.124s;">Forward</li>
+                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.179s;">Reload</li>
+
+                                <li class="mdc-list-divider" role="separator"></li>
+
+                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.236s;">Save As...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+    </div>
+    <div class="demo-content mdc-toolbar-fixed-adjust">
+        <nav class="mdc-permanent-drawer mobile-hide">
+            <div class="mdc-list-group">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                    </a>
+                </nav>
+
+                <hr class="mdc-list-divider">
+
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                    </a>
+                </nav>
+            </div>
+        </nav>
+        <main class="demo-main">
+            <div>AContent</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+            <div>Content</div>
+        </main>
+    </div>
+    
+    
+
+    <script src="~/node_modules/material-components-web/dist/material-components-web.js"></script>
+    <script>window.mdc.autoInit();</script>
+    <script>
+        //let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
+        //document.querySelector('.menu').addEventListener('click', () => drawer.open = true);
+
+        let menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.mdc-simple-menu'));
+        // Add event listener to some button to toggle the menu on and off.
+        document.querySelector('.toggle').addEventListener('click', () => menu.open = !menu.open);
+        
+    </script>
+</body>
+</html>
+
+@RenderBody()

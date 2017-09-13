@@ -1,0 +1,180 @@
+C:\TFS\Templates\MVC\bin\ApplicationInsights.config
+C:\TFS\Templates\MVC\bin\roslyn\csc.exe
+C:\TFS\Templates\MVC\bin\roslyn\csc.exe.config
+C:\TFS\Templates\MVC\bin\roslyn\csc.rsp
+C:\TFS\Templates\MVC\bin\roslyn\csi.exe
+C:\TFS\Templates\MVC\bin\roslyn\csi.exe.config
+C:\TFS\Templates\MVC\bin\roslyn\csi.rsp
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\TFS\Templates\MVC\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.AppContext.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Console.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Diagnostics.Process.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.IO.Compression.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.IO.FileSystem.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.IO.Pipes.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Security.AccessControl.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Security.Claims.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Security.Principal.Windows.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Threading.Thread.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.ValueTuple.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Xml.XPath.dll
+C:\TFS\Templates\MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\TFS\Templates\MVC\bin\roslyn\vbc.exe
+C:\TFS\Templates\MVC\bin\roslyn\vbc.exe.config
+C:\TFS\Templates\MVC\bin\roslyn\vbc.rsp
+C:\TFS\Templates\MVC\bin\roslyn\VBCSCompiler.exe
+C:\TFS\Templates\MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\TFS\Templates\MVC\bin\MVC.dll.config
+C:\TFS\Templates\MVC\bin\MVC.dll
+C:\TFS\Templates\MVC\bin\MVC.pdb
+C:\TFS\Templates\MVC\bin\Antlr3.Runtime.dll
+C:\TFS\Templates\MVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\TFS\Templates\MVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\TFS\Templates\MVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\TFS\Templates\MVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\TFS\Templates\MVC\bin\Microsoft.AI.Web.dll
+C:\TFS\Templates\MVC\bin\Microsoft.AI.WindowsServer.dll
+C:\TFS\Templates\MVC\bin\Microsoft.ApplicationInsights.dll
+C:\TFS\Templates\MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\TFS\Templates\MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\TFS\Templates\MVC\bin\Newtonsoft.Json.dll
+C:\TFS\Templates\MVC\bin\System.Web.Helpers.dll
+C:\TFS\Templates\MVC\bin\System.Web.Mvc.dll
+C:\TFS\Templates\MVC\bin\System.Web.Optimization.dll
+C:\TFS\Templates\MVC\bin\System.Web.Razor.dll
+C:\TFS\Templates\MVC\bin\System.Web.WebPages.Deployment.dll
+C:\TFS\Templates\MVC\bin\System.Web.WebPages.dll
+C:\TFS\Templates\MVC\bin\System.Web.WebPages.Razor.dll
+C:\TFS\Templates\MVC\bin\WebGrease.dll
+C:\TFS\Templates\MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\TFS\Templates\MVC\bin\System.Web.Helpers.xml
+C:\TFS\Templates\MVC\bin\System.Web.Mvc.xml
+C:\TFS\Templates\MVC\bin\System.Web.Optimization.xml
+C:\TFS\Templates\MVC\bin\System.Web.Razor.xml
+C:\TFS\Templates\MVC\bin\System.Web.WebPages.xml
+C:\TFS\Templates\MVC\bin\System.Web.WebPages.Deployment.xml
+C:\TFS\Templates\MVC\bin\System.Web.WebPages.Razor.xml
+C:\TFS\Templates\MVC\bin\Antlr3.Runtime.pdb
+C:\TFS\Templates\MVC\bin\Newtonsoft.Json.xml
+C:\TFS\Templates\MVC\bin\Microsoft.ApplicationInsights.xml
+C:\TFS\Templates\MVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\TFS\Templates\MVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\TFS\Templates\MVC\bin\Microsoft.AI.WindowsServer.xml
+C:\TFS\Templates\MVC\bin\Microsoft.AI.Web.xml
+C:\TFS\Templates\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
+C:\TFS\Templates\MVC\obj\Debug\MVC.csproj.CoreCompileInputs.cache
+C:\TFS\Templates\MVC\obj\Debug\MVC.dll
+C:\TFS\Templates\MVC\obj\Debug\MVC.pdb
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\ApplicationInsights.config
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\csc.exe
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\csc.exe.config
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\csc.rsp
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\csi.exe
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\csi.exe.config
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\csi.rsp
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.AppContext.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Console.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Diagnostics.Process.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.IO.Compression.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.IO.FileSystem.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.IO.Pipes.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Security.AccessControl.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Security.Claims.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Security.Principal.Windows.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Threading.Thread.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.ValueTuple.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Xml.XPath.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\vbc.exe
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\vbc.exe.config
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\vbc.rsp
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\VBCSCompiler.exe
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\MVC.dll.config
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\MVC.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\MVC.pdb
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Antlr3.Runtime.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.Web.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.WindowsServer.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.ApplicationInsights.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Newtonsoft.Json.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Helpers.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Mvc.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Optimization.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Razor.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.WebPages.Deployment.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.WebPages.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.WebPages.Razor.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\WebGrease.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Helpers.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Mvc.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Optimization.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.Razor.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.WebPages.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.WebPages.Deployment.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\System.Web.WebPages.Razor.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Antlr3.Runtime.pdb
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Newtonsoft.Json.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.ApplicationInsights.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.WindowsServer.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\bin\Microsoft.AI.Web.xml
+C:\TFS\SGSIS\PRODEST - Templates\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
+C:\TFS\SGSIS\PRODEST - Templates\MVC\obj\Debug\MVC.csproj.CoreCompileInputs.cache
+C:\TFS\SGSIS\PRODEST - Templates\MVC\obj\Debug\MVC.dll
+C:\TFS\SGSIS\PRODEST - Templates\MVC\obj\Debug\MVC.pdb
