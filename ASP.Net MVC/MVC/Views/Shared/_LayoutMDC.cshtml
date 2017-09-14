@@ -37,10 +37,39 @@
             position: absolute;
             right: 8px;
             top: 56px;
+            margin: 70px 20px 8px 20px;
         }
 
-        .gbii::before {
-            content: url(https://lh3.googleusercontent.com/-mdCFg-L7QyA/AAAAAAAAAAI/AAAAAAAAAAA/APJypA32MX34lPHr3KrAbl6lGj005QFkOQ/s32-c-mo/photo.jpg);
+        .menu-user-Barra-Acoes {
+            background: #f5f5f5;
+            border-top: 1px solid #ccc;
+        }
+
+        .menu-user-Barra-Acoes-button {
+            border: 1px solid #c6c6c6;
+        }
+
+        .avatar {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            margin: 8px 20px 8px 20px;
+        }
+
+        .mdc-button-MinhaConta {
+            margin: 10px 0px 0px 0px;
+        }
+
+        .mdc-button-capitalize {
+            text-transform: capitalize;
+        }
+
+        .avatarExpandido {
+            border-radius: 50%;
+        }
+
+        .email {
+            color: #666;
         }
 
         @@media(min-width: 768px) {
@@ -68,23 +97,32 @@
                     </div>
                 </section>
                 <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-                    <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
-                    <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
-                    <span class="gb_7a gbii">
-                        
-                    </span>
                     <div class="mdc-menu-anchor">
-                        <a href="#" class="material-icons mdc-toolbar__icon toggle" aria-label="Bookmark this page" alt="Bookmark this page">more_vert</a>
-                        <div class="mdc-simple-menu menu-user mdc-simple-menu--open" tabindex="-1" id="demo-menu">
-                            <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true" style="transform: scale(1, 1);">
-                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.069s;">Back</li>
-                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.124s;">Forward</li>
-                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.179s;">Reload</li>
+                        <a href="#" class="toggle"><img class=" avatar" src="https://scontent.fvix3-1.fna.fbcdn.net/v/t1.0-1/p200x200/21557915_1821702427843307_6897288749515252864_n.jpg?oh=30098f90d09e16a21d88d314c06a2d45&oe=5A19DD75"></a>
 
-                                <li class="mdc-list-divider" role="separator"></li>
+                        <div class="mdc-simple-menu menu-user " tabindex="-1" id="demo-menu">
+                            <div class="mdc-card demo-card mdc-simple-menu__items">
+                                <div class="mdc-card__horizontal-block">
+                                    <img class="mdc-card__media-item avatarExpandido" src="https://scontent.fvix3-1.fna.fbcdn.net/v/t1.0-1/p200x200/21557915_1821702427843307_6897288749515252864_n.jpg?oh=30098f90d09e16a21d88d314c06a2d45&oe=5A19DD75">
+                                    <section class="mdc-card__primary">
+                                        <h1 class="mdc-card__title"><b>Nome do Usuário do Sistema</b></h1>
+                                        <h2 class="mdc-card__subtitle email">nomeusuário@provedor.com.br</h2>
+                                        <h2 class="mdc-card__subtitle email"><span>Entidade: </span><span>Prodest</span></h2>
+                                        <div class="mdc-card__supporting-text">
+                                            <a href="https://acessocidadao.es.gov.br/Perfil/" class="mdc-button mdc-button--primary mdc-button--unelevated mdc-button--dense mdc-ripple-upgraded mdc-button-MinhaConta mdc-button-capitalize">Minha Conta</a>
+                                        </div>
+                                    </section>
+                                </div>
+                                <section class="mdc-card__actions menu-user-Barra-Acoes">
+                                    <div dir="ltr" style="width:50%">
+                                        <a href="#" class="mdc-button mdc-button--compact mdc-button-capitalize menu-user-Barra-Acoes-button">Botão Opção a Esquerda</a>
+                                    </div>
+                                    <div dir="rtl" style="width:50%">
+                                        <a href="#" class="mdc-button mdc-button--compact mdc-button-capitalize menu-user-Barra-Acoes-button">Sair</a>
+                                    </div>
+                                </section>
 
-                                <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.236s;">Save As...</li>
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -179,8 +217,8 @@
             <div>Content</div>
         </main>
     </div>
-    
-    
+
+
 
     <script src="~/node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>window.mdc.autoInit();</script>
@@ -191,7 +229,7 @@
         let menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.mdc-simple-menu'));
         // Add event listener to some button to toggle the menu on and off.
         document.querySelector('.toggle').addEventListener('click', () => menu.open = !menu.open);
-        
+
     </script>
 </body>
 </html>
