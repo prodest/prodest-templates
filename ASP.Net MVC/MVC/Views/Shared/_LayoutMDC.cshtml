@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html class="mdc-typography">
+<html class="mdc-typography html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         :root {
-            --mdc-theme-primary: #2196f3;
+            --mdc-theme-primary: #039BE5;
+            --mdc-theme-primary-dark: #0288D1;
+            --mdc-theme-primary-light: #6ec6ff;
         }
 
         .mdc-ripple-surface.mdc-ripple-upgraded.mdc-button--primary::before,
@@ -21,16 +23,26 @@
             margin-top: 8px;
         }
 
+        .html {
+            overflow: hidden;
+        }
+
         /* Place drawer and main next to each other. */
-        .demo-content {
+        .system-content {
             display: flex;
             flex: 1 1 auto;
             height: 100%;
             box-sizing: border-box;
         }
 
-        .demo-main {
-            padding-left: 16px;
+        .right-content {
+            margin-right: 0;
+            overflow-y: scroll;
+            position: absolute;
+            bottom: 0;
+            top: 0px;
+            right: 0;
+            left: 240px;
         }
 
         .menu-user {
@@ -39,8 +51,48 @@
             top: 56px;
         }
 
+        .system-main{
+            padding-left: 16px;
+        }
+
         .gbii::before {
             content: url(https://lh3.googleusercontent.com/-mdCFg-L7QyA/AAAAAAAAAAI/AAAAAAAAAAA/APJypA32MX34lPHr3KrAbl6lGj005QFkOQ/s32-c-mo/photo.jpg);
+        }
+
+        /*div.fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }*/
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+        }
+
+        .drawer {
+            flex: 1 1 auto;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        .left-footer {
+            box-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+            background-color: #373435;
+        }
+
+        .brasao {
+            width: 150px;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
         }
 
         @@media(min-width: 768px) {
@@ -54,11 +106,31 @@
                 display: none;
             }
         }
+
+        @@media (max-width: 959px) and (orientation: landscape) {
+            .mdc-toolbar-fixed-adjust {
+                margin-top: 55px;
+            }
+        }
+
+        .feature-bar {
+            padding: 8px 56px 0 24px;
+            min-height: 36px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body class="mdc-typography demo-body">
     <div>
-        <header class="mdc-toolbar mdc-toolbar--fixed">
+        <header class="mdc-toolbar mdc-toolbar--fixed mdc-theme--primary-dark-bg">
             <div class="mdc-toolbar__row">
                 <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
                     <button class="demo-menu material-icons mdc-toolbar__icon--menu mobile-show">menu</button>
@@ -75,7 +147,7 @@
                     </span>
                     <div class="mdc-menu-anchor">
                         <a href="#" class="material-icons mdc-toolbar__icon toggle" aria-label="Bookmark this page" alt="Bookmark this page">more_vert</a>
-                        <div class="mdc-simple-menu menu-user mdc-simple-menu--open" tabindex="-1" id="demo-menu">
+                        <div class="mdc-simple-menu menu-user" tabindex="-1" id="demo-menu">
                             <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true" style="transform: scale(1, 1);">
                                 <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.069s;">Back</li>
                                 <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.124s;">Forward</li>
@@ -84,6 +156,7 @@
                                 <li class="mdc-list-divider" role="separator"></li>
 
                                 <li class="mdc-list-item" role="menuitem" tabindex="0" style="transition-delay: 0.236s;">Save As...</li>
+
                             </ul>
                         </div>
                     </div>
@@ -91,93 +164,199 @@
             </div>
         </header>
     </div>
-    <div class="demo-content mdc-toolbar-fixed-adjust">
-        <nav class="mdc-permanent-drawer mobile-hide">
-            <div class="mdc-list-group">
-                <nav class="mdc-list">
-                    <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-                    </a>
-                    <a class="mdc-list-item" href="#">
-                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
-                    </a>
-                    <a class="mdc-list-item" href="#">
-                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
-                    </a>
-                    <a class="mdc-list-item" href="#">
-                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
-                    </a>
-                </nav>
+    <div class="system-content">
+        <div class="left-content">
+            <nav class="mdc-permanent-drawer mobile-hide drawer mdc-toolbar-fixed-adjust">
+                <div class="mdc-list-group">
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                        </a>
+                    </nav>
 
-                <hr class="mdc-list-divider">
+                    <hr class="mdc-list-divider">
 
-                <nav class="mdc-list">
-                    <a class="mdc-list-item" href="#">
-                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
-                    </a>
-                    <a class="mdc-list-item" href="#">
-                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
-                    </a>
-                </nav>
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                        </a>
+                    </nav>
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                        </a>
+                    </nav>
+
+                    <hr class="mdc-list-divider">
+
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                        </a>
+                    </nav>
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                        </a>
+                    </nav>
+
+                    <hr class="mdc-list-divider">
+
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                        </a>
+                    </nav>
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                        </a>
+                    </nav>
+
+                    <hr class="mdc-list-divider">
+
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                        </a>
+                    </nav>
+                </div>
+            </nav>
+            <div class="fixed left-footer">
+                <img class="brasao" src="http://cdn.es.gov.br/images/logo/governo/brasao/left-white/Brasao_Governo_240.png" />
             </div>
-        </nav>
-        <main class="demo-main">
-            <div>AContent</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-        </main>
+        </div>
+            
+        
+        <div class="right-content mdc-toolbar-fixed-adjust">
+            <div class="second-header">
+                <div class="mdc-toolbar">
+                    <div class="mdc-toolbar__row feature-bar">
+                        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                            <span class="feature-title">Sub-título</span>
+                        </section>
+                    </div>
+                    <div class="mdc-toolbar__row">
+                        <div class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                            <div>
+                                <nav id="toolbar-tab-bar-secondary-indicator" class="mdc-tab-bar mdc-tab-bar--indicator-accent mdc-tab-bar-upgraded">
+                                    <a class="mdc-tab mdc-tab--active mdc-ripple-upgraded" href="#one" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422; --mdc-ripple-fg-translate-start:46px, -17.5938px; --mdc-ripple-fg-translate-end:32px, -24px;">Item One</a>
+                                    <a class="mdc-tab mdc-ripple-upgraded" href="#two" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">Item Two</a>
+                                    <a class="mdc-tab mdc-ripple-upgraded" href="#three" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">Item Three</a>
+                                    <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(0.333333, 1); visibility: visible;"></span>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="system-main">
+                <div>AContent</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+            </main>
+            
+        </div>
     </div>
     
     
@@ -185,12 +364,13 @@
     <script src="~/node_modules/material-components-web/dist/material-components-web.js"></script>
     <script>window.mdc.autoInit();</script>
     <script>
-        //let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
-        //document.querySelector('.menu').addEventListener('click', () => drawer.open = true);
 
         let menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.mdc-simple-menu'));
         // Add event listener to some button to toggle the menu on and off.
         document.querySelector('.toggle').addEventListener('click', () => menu.open = !menu.open);
+
+        mdc.tabs.MDCTabBar.attachTo(document.querySelector('#toolbar-tab-bar-secondary-indicator'));
+
         
     </script>
 </body>
