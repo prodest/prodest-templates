@@ -115,10 +115,28 @@
             margin: 10px 0px 0px 0px;
         }
 
-        .mdc-button-capitalize {
-            text-transform: capitalize;
+        .capitalize {
+            text-transform: capitalize !important;
         }
 
+        .uppercase {
+            text-transform: uppercase !important;
+        }
+
+        .subheader {
+            color: rgba(0,0,0,0.38);
+            font-size: 12px;
+            padding: 0 16px;
+            letter-spacing: .5px;
+            width: 100%;
+        }
+        .copyright {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 12px;
+            padding: 0 16px;
+            letter-spacing: .5px;
+            width: 100%;
+        }
         .avatarExpandido {
             border-radius: 50%;
         }
@@ -201,27 +219,27 @@
                 </section>
                 <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
                     <div class="mdc-menu-anchor">
-                        <a href="#" class="toggle"><img class=" avatar" src="https://scontent.fvix3-1.fna.fbcdn.net/v/t1.0-1/p200x200/21557915_1821702427843307_6897288749515252864_n.jpg?oh=30098f90d09e16a21d88d314c06a2d45&oe=5A19DD75"></a>
+                        <a href="#" class="toggle"><img class=" avatar" src="~/Content/images/silhouette.png"></a>
 
                         <div class="mdc-simple-menu menu-user " tabindex="-1" id="demo-menu">
                             <div class="mdc-card demo-card mdc-simple-menu__items">
                                 <div class="mdc-card__horizontal-block">
-                                    <img class="mdc-card__media-item avatarExpandido" src="https://scontent.fvix3-1.fna.fbcdn.net/v/t1.0-1/p200x200/21557915_1821702427843307_6897288749515252864_n.jpg?oh=30098f90d09e16a21d88d314c06a2d45&oe=5A19DD75">
+                                    <img class="mdc-card__media-item avatarExpandido" src="~/Content/images/silhouette.png">
                                     <section class="mdc-card__primary">
                                         <h1 class="mdc-card__title"><b>Nome do Usuário do Sistema</b></h1>
                                         <h2 class="mdc-card__subtitle email">nomeusuário@provedor.com.br</h2>
                                         <h2 class="mdc-card__subtitle email"><span>Entidade: </span><span>Prodest</span></h2>
                                         <div class="mdc-card__supporting-text">
-                                            <a href="https://acessocidadao.es.gov.br/Perfil/" class="mdc-button mdc-button--primary mdc-button--unelevated mdc-button--dense mdc-ripple-upgraded mdc-button-MinhaConta mdc-button-capitalize">Minha Conta</a>
+                                            <a href="https://acessocidadao.es.gov.br/Perfil/" class="mdc-button mdc-button--primary mdc-button--unelevated mdc-button--dense mdc-ripple-upgraded mdc-button-MinhaConta capitalize">Minha Conta</a>
                                         </div>
                                     </section>
                                 </div>
                                 <section class="mdc-card__actions menu-user-Barra-Acoes">
                                     <div dir="ltr" style="width:50%">
-                                        <a href="#" class="mdc-button mdc-button--compact mdc-button-capitalize menu-user-Barra-Acoes-button">Botão Opção a Esquerda</a>
+                                        <a href="#" class="mdc-button mdc-button--compact capitalize menu-user-Barra-Acoes-button">Botão Opção a Esquerda</a>
                                     </div>
                                     <div dir="rtl" style="width:50%">
-                                        <a href="#" class="mdc-button mdc-button--compact mdc-button-capitalize menu-user-Barra-Acoes-button">Sair</a>
+                                        <a href="#" class="mdc-button mdc-button--compact capitalize menu-user-Barra-Acoes-button">Sair</a>
                                     </div>
                                 </section>
 
@@ -238,7 +256,19 @@
                 <div class="mdc-list-group">
                     <nav class="mdc-list">
                         <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>Página Inicial
+                        </a>
+                    </nav>
+
+                    <hr class="mdc-list-divider">
+
+                    <nav class="mdc-list">
+                        <span class="uppercase subheader">Opções 1</span>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
                         </a>
                         <a class="mdc-list-item" href="#">
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
@@ -251,9 +281,9 @@
                         </a>
                     </nav>
 
-                    <hr class="mdc-list-divider">
 
                     <nav class="mdc-list">
+                        <span class="uppercase subheader">Opções 2</span>
                         <a class="mdc-list-item" href="#">
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
                         </a>
@@ -261,10 +291,12 @@
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
                         </a>
                     </nav>
+
+                    <hr class="mdc-list-divider">
+
                     <nav class="mdc-list">
-                        <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-                        </a>
+                        <span class="uppercase subheader">Opções 3</span>
+
                         <a class="mdc-list-item" href="#">
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
                         </a>
@@ -279,6 +311,8 @@
                     <hr class="mdc-list-divider">
 
                     <nav class="mdc-list">
+                        <span class="uppercase subheader">Opções 4</span>
+
                         <a class="mdc-list-item" href="#">
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
                         </a>
@@ -286,10 +320,11 @@
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
                         </a>
                     </nav>
+                    <hr class="mdc-list-divider">
+
                     <nav class="mdc-list">
-                        <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-                        </a>
+                        <span class="uppercase subheader">Opções 5</span>
+
                         <a class="mdc-list-item" href="#">
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
                         </a>
@@ -304,31 +339,8 @@
                     <hr class="mdc-list-divider">
 
                     <nav class="mdc-list">
-                        <a class="mdc-list-item" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
-                        </a>
-                        <a class="mdc-list-item" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
-                        </a>
-                    </nav>
-                    <nav class="mdc-list">
-                        <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-                        </a>
-                        <a class="mdc-list-item" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
-                        </a>
-                        <a class="mdc-list-item" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
-                        </a>
-                        <a class="mdc-list-item" href="#">
-                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
-                        </a>
-                    </nav>
+                        <span class="uppercase subheader">Opções 6</span>
 
-                    <hr class="mdc-list-divider">
-
-                    <nav class="mdc-list">
                         <a class="mdc-list-item" href="#">
                             <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
                         </a>
@@ -340,10 +352,11 @@
             </nav>
             <div class="fixed left-footer">
                 <img class="brasao" src="http://cdn.es.gov.br/images/logo/governo/brasao/left-white/Brasao_Governo_240.png" />
+                <span class="copyright">Desenvolvido pelo PRODEST</span>
             </div>
         </div>
-            
-        
+
+
         <div class="right-content mdc-toolbar-fixed-adjust">
             <div class="second-header">
                 <div class="mdc-toolbar">
@@ -429,7 +442,7 @@
                 <div>Content</div>
                 <div>Content</div>
             </main>
-            
+
         </div>
     </div>
 
@@ -445,7 +458,7 @@
 
         mdc.tabs.MDCTabBar.attachTo(document.querySelector('#toolbar-tab-bar-secondary-indicator'));
 
-        
+
     </script>
 </body>
 </html>
