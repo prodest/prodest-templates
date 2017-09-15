@@ -29,6 +29,13 @@ namespace MVC.Controllers
 
         public ActionResult MDCDeslogado()
         {
+            ViewBag.Logado = false;
+            return View();
+        }
+
+        public ActionResult MDCMenuHorizontal()
+        {
+            ViewBag.Logado = true;
             return View();
         }
 
@@ -44,6 +51,7 @@ namespace MVC.Controllers
 
         public ActionResult MDCCompleto()
         {
+            ViewBag.Title = "MDC Completo!";
             return View();
         }
     }

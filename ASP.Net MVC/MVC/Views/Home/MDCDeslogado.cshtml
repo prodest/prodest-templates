@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "MDC";
-    ViewBag.Logado = true;
-    Layout = "~/Views/Shared/_LayoutCompleto.cshtml";
+    ViewBag.Logado = false;
+    Layout = "~/Views/Shared/_LayoutMenuHorizontal.cshtml";
 }
 
 <div>AContent</div>
@@ -59,10 +59,3 @@
 <div>Content</div>
 <div>Content</div>
 <div>Content</div>
-
-@section scripts
-{
-    <script>
-        mdc.tabs.MDCTabBar.attachTo(document.querySelector('#toolbar-tab-bar-secondary-indicator'));
-    </script>
-}

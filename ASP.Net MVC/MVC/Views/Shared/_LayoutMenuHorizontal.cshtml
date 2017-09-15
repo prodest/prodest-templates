@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Greeting App</title>
+    <title>@ViewBag.Title</title>
+
     <link rel="stylesheet"
           href="~/node_modules/material-components-web/material-components-web.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -12,12 +13,10 @@
 </head>
 <body class="mdc-typography demo-body">
     <div>
-        @Html.Partial("_Header")
+        @Html.Partial("_Header", new ViewDataDictionary { { "ExibirMenuHorizontal", true }, { "Logado", ViewBag.Logado  } })
     </div>
     <div class="system-content">
-        @Html.Partial("_MenuEsquerdo")
-        <div class="right-content mdc-toolbar-fixed-adjust">
-            @Html.Partial("_FeatureBar")
+        <div class="full-content mdc-toolbar-fixed-adjust">
             <main class="system-main">
                 @RenderBody()
             </main>
@@ -30,6 +29,7 @@
         let menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.mdc-simple-menu'));
         document.querySelector('.toggle-avatar').addEventListener('click', () => menu.open = !menu.open);
     </script>
+
     @RenderSection("scripts", false)
 </body>
 </html>

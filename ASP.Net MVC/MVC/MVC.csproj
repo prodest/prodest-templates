@@ -525,11 +525,18 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\_LayoutMDCCompleto.cshtml" />
+    <Content Include="Views\Shared\_LayoutCompleto.cshtml" />
     <Content Include="Views\Home\MDCCompleto.cshtml" />
     <Content Include="Views\Shared\_MenuEsquerdo.cshtml" />
     <Content Include="Views\Shared\_FeatureBar.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Home\MDCDeslogado.cshtml" />
+    <Content Include="Views\Shared\_LayoutMenuHorizontal.cshtml" />
+    <Content Include="Views\Home\MDCMenuHorizontal.cshtml" />
+    <Content Include="Views\Home\MDCSoMenu.cshtml" />
+    <Content Include="Views\Home\MDC2Nivel.cshtml" />
+    <Content Include="Views\Shared\_LayoutSoMenu.cshtml" />
+    <Content Include="Views\Shared\_Layout2Nivel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

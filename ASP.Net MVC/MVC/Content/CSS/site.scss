@@ -46,11 +46,27 @@ textarea {
     display: flex;
 }
 
+.FazerLogin a{
+    text-decoration: none;
+    padding-right: 30px;
+}
+
 .system-content {
     display: flex;
     flex: 1 1 auto;
     height: 100%;
     box-sizing: border-box;
+}
+
+.full-content {
+    margin-right: 0;
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+    top: 0px;
+    right: 0;
+    left: 0px;
+    background-color: rgb(236, 239, 241);
 }
 
 .right-content {
@@ -122,6 +138,10 @@ textarea {
     width: 32px;
     border-radius: 50%;
     margin: 8px 20px 8px 20px;
+}
+
+.toggle-avatar {
+    outline: none;
 }
 
 .mdc-button-MinhaConta {
@@ -234,3 +254,14 @@ textarea {
     background-color: darkgrey;
     outline: 1px solid slategrey;
 }
+
+.menu-horizontal li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-horizontal a {
+    text-decoration: none;
+}
+
+

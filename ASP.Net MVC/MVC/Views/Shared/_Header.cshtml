@@ -13,34 +13,58 @@
                     </span>
                 </div>
             </a>
+            @if (bool.TryParse(ViewData["ExibirMenuHorizontal"].ToString(), out var exibir) && bool.TryParse((ViewData["Logado"] != null ? ViewData["Logado"] : "").ToString(), out var logado))
+            {
+                if (exibir && logado) {
+                    <div class="menu-horizontal">
+                        <ul>
+                            <li><a href="~/" class="mdc-theme--text-hint-on-primary">Item 1</a></li>
+                            <li><a href="~/" class="mdc-theme--text-hint-on-primary">Item 2</a></li>
+                            <li><a href="~/" class="mdc-theme--text-primary-on-primary">Completo</a></li>
+                        </ul>
+                    </div>
+                }
+            }
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-            <div class="mdc-menu-anchor">
-                <a href="#" class="toggle-avatar"><img class="avatar" src="~/Content/images/silhouette.png"></a>
-                <div class="mdc-simple-menu menu-user " tabindex="-1" id="demo-menu">
-                    <div class="mdc-card demo-card mdc-simple-menu__items">
-                        <div class="mdc-card__horizontal-block">
-                            <img class="mdc-card__media-item avatarExpandido" src="~/Content/images/silhouette.png">
-                            <section class="mdc-card__primary">
-                                <h1 class="mdc-card__title"><b>Nome do Usuário do Sistema</b></h1>
-                                <h2 class="mdc-card__subtitle email">nomeusuário@provedor.com.br</h2>
-                                <h2 class="mdc-card__subtitle email"><span>Entidade: </span><span>Prodest</span></h2>
-                                <div class="mdc-card__supporting-text">
-                                    <a href="https://acessocidadao.es.gov.br/Perfil/" class="mdc-button mdc-button--primary mdc-button--unelevated mdc-button--dense mdc-ripple-upgraded mdc-button-MinhaConta capitalize">Minha Conta</a>
+            @if (bool.TryParse((ViewData["Logado"]!=null? ViewData["Logado"]:"").ToString(), out var estalogado))
+            {
+                if (estalogado)
+                {
+                    <div class="mdc-menu-anchor">
+                        <a href="#" class="toggle-avatar"><img class="avatar" src="~/Content/images/silhouette.png"></a>
+                        <div class="mdc-simple-menu menu-user " tabindex="-1" id="demo-menu">
+                            <div class="mdc-card demo-card mdc-simple-menu__items">
+                                <div class="mdc-card__horizontal-block">
+                                    <img class="mdc-card__media-item avatarExpandido" src="~/Content/images/silhouette.png">
+                                    <section class="mdc-card__primary">
+                                        <h1 class="mdc-card__title"><b>Nome do Usuário do Sistema</b></h1>
+                                        <h2 class="mdc-card__subtitle email">nomeusuário@provedor.com.br</h2>
+                                        <h2 class="mdc-card__subtitle email"><span>Entidade: </span><span>Prodest</span></h2>
+                                        <div class="mdc-card__supporting-text">
+                                            <a href="https://acessocidadao.es.gov.br/Perfil/" class="mdc-button mdc-button--primary mdc-button--unelevated mdc-button--dense mdc-ripple-upgraded mdc-button-MinhaConta capitalize">Minha Conta</a>
+                                        </div>
+                                    </section>
                                 </div>
-                            </section>
+                                <section class="mdc-card__actions menu-user-Barra-Acoes">
+                                    <div dir="ltr" style="width:50%">
+                                        <a href="#" class="mdc-button mdc-button--compact capitalize menu-user-Barra-Acoes-button">Botão Opção a Esquerda</a>
+                                    </div>
+                                    <div dir="rtl" style="width:50%">
+                                        <a href="@Url.Action("MDCDeslogado","Home")" class="mdc-button mdc-button--compact capitalize menu-user-Barra-Acoes-button">Sair</a>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                        <section class="mdc-card__actions menu-user-Barra-Acoes">
-                            <div dir="ltr" style="width:50%">
-                                <a href="#" class="mdc-button mdc-button--compact capitalize menu-user-Barra-Acoes-button">Botão Opção a Esquerda</a>
-                            </div>
-                            <div dir="rtl" style="width:50%">
-                                <a href="#" class="mdc-button mdc-button--compact capitalize menu-user-Barra-Acoes-button">Sair</a>
-                            </div>
-                        </section>
                     </div>
-                </div>
-            </div>
+                }
+                else
+                {
+                    <div class="FazerLogin">
+                        <a href="@Url.Action("MDCMenuHorizontal", "Home")" class="mdc-theme--text-secondary-on-primary-dark">Fazer Login</a>
+                    </div>
+                }
+            }
         </section>
     </div>
 </header>
