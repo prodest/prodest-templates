@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/CSS/Site.css",
+    "inputFile": "Content/CSS/Site.scss"
+  },
+  {
+    "outputFile": "node_modules/material-components-web/material-components-web.css",
+    "inputFile": "node_modules/material-components-web/material-components-web.scss"
+  }
+]
