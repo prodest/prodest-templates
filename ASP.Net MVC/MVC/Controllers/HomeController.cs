@@ -27,12 +27,22 @@ namespace MVC.Controllers
             return View();
         }
 
-        public ActionResult MDC()
+        public ActionResult MDCDeslogado()
         {
             return View();
         }
 
-        public ActionResult MDL()
+        public ActionResult MDCSoMenu()
+        {
+            return View();
+        }
+
+        public ActionResult MDC2Nivel()
+        {
+            return View();
+        }
+
+        public ActionResult MDCCompleto()
         {
             return View();
         }
