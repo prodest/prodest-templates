@@ -46,7 +46,7 @@ textarea {
     display: flex;
 }
 
-.FazerLogin a{
+.FazerLogin a {
     text-decoration: none;
     padding-right: 30px;
 }
@@ -56,6 +56,12 @@ textarea {
     flex: 1 1 auto;
     height: 100%;
     box-sizing: border-box;
+}
+
+.conteudo-centralizado {
+    margin: 0 auto;
+    max-width: 1352px;
+    padding: 80px 114px;
 }
 
 .full-content {
@@ -69,6 +75,10 @@ textarea {
     background-color: rgb(236, 239, 241);
 }
 
+.full-content .mdc-card {
+    background-color: white;
+}
+
 .right-content {
     margin-right: 0;
     overflow-y: scroll;
@@ -78,6 +88,10 @@ textarea {
     right: 0;
     left: 240px;
     background-color: rgb(236, 239, 241);
+}
+
+.right-content .mdc-card {
+    background-color: white;
 }
 
 .menu-user {
@@ -263,5 +277,3 @@ textarea {
 .menu-horizontal a {
     text-decoration: none;
 }
-
-
