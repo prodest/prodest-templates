@@ -341,12 +341,6 @@
     <Content Include="node_modules\material-components-web\dist\material-components-web.min.css" />
     <Content Include="node_modules\material-components-web\dist\material-components-web.min.js" />
     <Content Include="node_modules\material-components-web\index.js" />
-    <Content Include="node_modules\material-components-web\material-components-web.css">
-      <DependentUpon>material-components-web.scss</DependentUpon>
-    </Content>
-    <Content Include="node_modules\material-components-web\material-components-web.min.css">
-      <DependentUpon>material-components-web.css</DependentUpon>
-    </Content>
     <Content Include="node_modules\tabbable\index.js" />
     <Content Include="node_modules\tabbable\karma.conf.js" />
     <Content Include="Content\Scripts\bootstrap.js" />
